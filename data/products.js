@@ -43,7 +43,7 @@ class Product {
 class Clothing extends Product {
   sizeChartLink;
 
-  constructor(ProductDetails) {
+  constructor(productDetails) {
     super(productDetails);
     this.sizeChartLink = productDetails.sizeChartLink;
   }
@@ -718,7 +718,7 @@ export const products = [
     ]
   }
 ].map((productDetails) => {
-  if(productDetails.type === 'clothing') {
+  if (productDetails.type === 'clothing') {
     return new Clothing(productDetails);
   }
   return new Product(productDetails);
