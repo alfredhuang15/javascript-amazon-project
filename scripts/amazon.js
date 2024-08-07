@@ -83,4 +83,5 @@ function renderProductsGrid() {
 
     });
   });
+  updateCartQuantitiy();
 }
